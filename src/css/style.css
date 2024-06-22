@@ -1,0 +1,87 @@
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px;
+    position: absolute;
+}
+
+.cartao .conteudo-cartao .img-fundo-cartao {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+}
+
+body .img-de-fundo-topo {
+    position: absolute;
+    bottom: 30%;
+    right: 50%;
+}
+
+body .img-de-fundo-rodape {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+
+.cartao .conteudo-cartao .infos-pessoais {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+}
+
+.cartao .infos-pessoais .foto-de-perfil {
+    border-radius: 50%;
+    margin-top: -50px;
+    border: 5px solid white;
+}
+
+.cartao .informacoes {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    height: 150px;
+    padding: 30px;
+}
+
+.informacoes .info .counter,
+.cartao.infos-pessoais .p {
+    font-weight: 700;
+}
+
+.cartao .infos-pessoais .idade,
+.cartao .infos-pessoais .nome-cidade,
+.infos-pessoais .info  .info-type,
+.informacoes .info .counter-type {
+    color: var(--text-color);
+}
+
+.cartao .infos-pessoais .idade {
+    font-weight: 300;
+}
+
