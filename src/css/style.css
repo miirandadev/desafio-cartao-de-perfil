@@ -4,6 +4,7 @@ body {
     font-family: "Kumbh Sans", sans-serif;
     font-size: 18px;
     overflow: hidden;
+    margin: 0;
 }
 
 .container {
@@ -11,6 +12,8 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
+    overflow: hidden;
+    position: relative;
 }
 
 .cartao {
@@ -20,7 +23,6 @@ body {
     background-color: white;
     border-radius: 20px;
     margin: 20px;
-    position: absolute;
 }
 
 .cartao .conteudo-cartao .img-fundo-cartao {
@@ -36,6 +38,7 @@ body .img-de-fundo-topo {
     position: absolute;
     bottom: 30%;
     right: 50%;
+    height: 100vh;
 }
 
 body .img-de-fundo-rodape {
@@ -85,3 +88,12 @@ body .img-de-fundo-rodape {
     font-weight: 300;
 }
 
+@media (max-width: 500px) {
+    body .img-de-fundo-rodape {
+        display: none;
+    }
+
+    body .img-de-fundo-topo {
+        display: none;
+    } 
+}
